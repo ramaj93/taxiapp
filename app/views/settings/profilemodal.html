@@ -1,0 +1,42 @@
+<!-- remark view -->
+<ion-modal-view>
+    <ion-header-bar class="bar-light bar bar-header taxi-bar" align-title="center">
+        <div>
+            <button class="button button-icon " ng-click=" closeModal()"><span class="icon ion-ios-close-empty"></span></button>
+            <div class="h1 title">Edit Profile</div>
+            <button ng-click="save()" class="button button-clear button-positive">Done</button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="list-centered">
+        <div class="list list-item-no-border profile">
+            <a class="item item-avatar">
+                <img src="images/ben.png" alt="Ben" ng-click="showAlert()">
+                <h2 class=profileh2 ng-click="openModal()">Profile photo
+                </h2>
+            </a>
+        </div>
+        <div class="list list-item-no-border profile">
+            <label class="item item-icon-left item-input item-floating-label input">
+                <i class="icon  ion-android-home profile-icon"></i>
+                <!-- <span class="input-label">Username</span> -->
+                <input type="text" placeholder="where are you from?" ng-model="user.home" class="input-bordered profile-input">
+            </label>
+        </div>
+        <!-- </ion-list> -->
+        <div class="list list-item-no-border profile">
+            <label class="item item-icon-left item-input item-floating-label input">
+                <i class="icon ion-ios-musical-notes profile-icon"></i>
+                <!-- <span class="input-label">Username</span> -->
+                <input type="text" placeholder="What genre do you like?" ng-model="user.genre" class="input-bordered profile-input">
+            </label>
+        </div>
+        <!-- </ion-list> -->
+        <div class="list list-item-no-border profile">
+            <label class="item item-icon-left item-input item-floating-label input">
+                <i class="icon ion-ios-person profile-icon"></i>
+                <!-- <span class="input-label">Username</span> -->
+                <input type="text" placeholder="About you" ng-model="user.about" class="input-bordered profile-input">
+            </label>
+        </div>
+        <!-- </ion-list> -->
+    </ion-content>

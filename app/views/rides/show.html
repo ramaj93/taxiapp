@@ -1,0 +1,51 @@
+<ion-view view-title="A Ride">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar">
+                <img ng-src="{{ride.avatar}}">
+                <h2>
+                    {{ride.driver}}
+                    <span class="item-note">
+                      {{status(ride)}}
+                    </span>
+                </h2>
+                <p>
+                    {{ride.price | currency:'TZS '}}
+                    <span class="item-note">
+                      {{ride.distance}} KM
+                    </span>
+                </p>
+            </ion-item>
+            <ion-item>
+                <p>
+                    <strong>Pick Location</strong>
+                    <span class="item-note">
+                      {{ride.departure}}
+                    </span>
+                </p>
+                <p>
+                    <strong>Destination</strong>
+                    <span class="item-note">
+                      {{ride.destination}}
+                    </span>
+                </p>
+            </ion-item>
+            <ion-item class="item-no-border-bottom">
+                <!-- on click launch rate questions modal -->
+                <button ng-click="openModal()" ng-if="ride.state == 'Done'" class="button button-energized button-block">
+                    Rate Driver
+                </button>
+                <button ng-click="arrived()" ng-if="ride.state == 'Waiting a Ride'" class="button button-energized button-block">
+                    Arrived
+                </button>
+                <button ng-if="ride.state == 'Not Confirmed'" class="button button-energized button-block">
+                    Confirm
+                </button>
+                <button ng-click="openModal()" ng-if="ride.state == 'Waiting Driver' || ride.state == 'Not Confirmed'" class="button button-energized button-block">
+                    Cancel
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+<!-- ng-click="cancel()" -->

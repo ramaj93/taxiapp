@@ -1,0 +1,20 @@
+<ion-view view-title="Driver">
+    <ion-nav-buttons side="secondary">
+        <button ng-click="showFilterBar()" class="button button-icon icon taxi-nav-button ion-ios-search">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="driver in drivers" ui-sref="app.driverdetails({id:driver.id})">
+                <img ng-src="{{driver.avatar}}">
+                <h2>
+                    {{driver.name}}
+                </h2>
+                <p>
+                    {{driver.bio}}
+                </p>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

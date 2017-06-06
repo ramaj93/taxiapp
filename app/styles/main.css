@@ -1,0 +1,441 @@
+/*!
+ * byteskode mobile stylesheet 
+ * @author byteskode Team (http://www.byteskode.com)
+ * Copyright 2015 byteskode Group
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+i,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+fieldset,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-family: 'Lato';
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: 'Lato';
+}
+
+.lower-keypad {
+    padding: 0;
+}
+
+.keypad-botton-margin {
+    margin-bottom: 5px;
+}
+
+.keypad-button {
+    border-color: #eee;
+    background-color: #fff;
+}
+
+.keypad-spec {
+    height: 80px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.calculator-display {
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.return-principal {
+    text-align: center;
+}
+
+.edit-icon:before {
+    /*override the ionic icon size use word :before*/
+    font-weight: 50;
+    font-size: 20px;
+    color: #999;
+}
+
+.return-avatar {
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    color: #777;
+}
+
+.return-item {
+    border-color: #eee;
+    padding: 10px 0 0 10px;
+}
+
+.bg-color {
+    /*background-color: #689BF0;*/
+    /*color: #fff;*/
+    border: none;
+}
+
+.exit-button {
+    font-size: 40px;
+}
+
+.loading-container .loading {
+    background-color: transparent;
+}
+
+.modal-title {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/*list styles*/
+
+.list-item-divider {
+    color: #666;
+}
+
+.list-centered {
+    margin: 0% 5% 0 5%;
+}
+
+
+/* text styles */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+
+/*login styles*/
+
+.login {
+    margin: 30% 5% 0 5%;
+}
+
+.forgot {
+    margin: 40% 5% 0 5%;
+}
+
+.input {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+
+/*borrower index styles*/
+
+.register-form {
+    margin: 5% 5% 0 5%;
+}
+
+
+/* setting styles */
+
+.page-margin {
+    margin: 10% 5% 0 5%;
+}
+
+
+/* loan type styles*/
+
+.type-page-margin {
+    margin: 5% 5% 0 5%;
+}
+
+
+/*margings styles*/
+
+.mgn-t10 {
+    margin-top: 10px !important;
+}
+
+
+/*input bordered styles*/
+
+input.input-bordered {
+    border-bottom-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    padding-bottom: 8px;
+}
+
+input.input-bordered:focus {
+    border-bottom-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 8px;
+}
+
+
+/*ionic list styles*/
+
+
+/**
+ * ionic button styles
+ */
+
+.button.button-energized {
+    background-color: #FFBF2E !important;
+    color: #000;
+}
+
+.button.button-energized:hover {
+    color: #000 !important;
+}
+
+
+/**
+ * ionic button styles
+ */
+
+
+/*ionic inputs styles*/
+
+.input-label {
+    color: #fff;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    color: #000;
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
+}
+
+
+/*ionic inputs styles*/
+
+.item-no-border {
+    border-style: none !important;
+}
+
+.item-no-border-top {
+    border-top-style: none !important;
+}
+
+.item-no-border-bottom {
+    border-bottom-style: none !important;
+}
+
+.list-item-no-border .item {
+    border-style: none !important;
+}
+
+.list-item-no-border .item-button {
+    padding: 6px 1px 5px 16px;
+}
+
+.list-item-no-border .button-bar > .button:last-child {
+    padding-right: 0px;
+}
+
+.ion-blue {
+    color: #387EF5;
+}
+
+
+/**
+ * bar & tab-nav styles
+ */
+
+.taxi-bar {
+    background-color: #FFBF2E !important;
+}
+
+.taxi-tabs {
+    background-color: #FFBF2E !important;
+}
+
+.taxi-tabs .tabs,
+.taxi-tabs > .tabs {
+    background-color: #FFBF2E !important;
+    background-image: linear-gradient(0deg, #FFBF2E, #FFBF2E 50%, transparent 50%);
+}
+
+
+/**
+ * taxi commons styles
+ */
+
+.taxi-background {
+    background-color: #363432 !important;
+}
+
+.taxi-background .bar.bar-light {
+    background-image: none !important;
+}
+
+.taxi-background .item {
+    background-color: #363432 !important;
+}
+
+.taxi-font-color {
+    color: #FFBF2E !important;
+}
+
+
+/**
+ * profile edit styles
+ */
+
+.profile .profile-icon {
+    color: #000;
+}
+
+.profile .profile-input {
+    margin-left: 40px;
+}
+
+.profile input.input-bordered {
+    border-bottom-color: #000;
+}
+
+.profile input.input-bordered:focus {
+    border-bottom-color: #000;
+}
+
+.profile .profileh2 {
+    color: #000;
+}
+
+
+/*.taxi-bar.bar .bar-header .h1 .title {
+    color: #000;
+}
+*/
+
+.prof .list .item {
+    text-align: center;
+    /*margin-left: 120px;*/
+}
+
+
+/*.prof .list .item .date {
+    margin-left: 100px;
+}
+*/
+
+.item .item-image {
+    width: 100% !important;
+    height: 50% !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+}

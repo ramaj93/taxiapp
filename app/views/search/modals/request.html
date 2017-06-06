@@ -1,0 +1,31 @@
+<!-- remark view class="taxi-background" -->
+<ion-modal-view>
+    <ion-header-bar class="bar-light bar bar-header taxi-bar" align-title="center">
+        <button class="button button-clear kusanya-nav-button" ng-click="close()">
+            <span class="icon ion-ios-close-empty"></span>
+        </button>
+        <div class="title">Request</div>
+    </ion-header-bar>
+    <ion-content scroll="false" class="list-centered">
+        <ion-list class="list-item-no-border">
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Pickup Location</span>
+                <input type="text" placeholder="Pickup Location" ng-model="request.departure" class="input-bordered" autofocus>
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Destination</span>
+                <input type="text" placeholder="Destination" ng-model="request.destination" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Description</span>
+                <input type="text" placeholder="i.e in front of the supermarket" ng-model="request.description" class="input-bordered">
+            </ion-item>
+            <ion-item>
+                <a class="button button-energized button-block" ng-click="placeRequest()">Request</a>
+            </ion-item>
+            <ion-item>
+                <a class="button button-energized button-block" ng-click="addRequest()">Select Driver</a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

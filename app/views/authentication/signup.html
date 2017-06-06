@@ -1,0 +1,31 @@
+<ion-view title="Register" class="ion-blue taxi-background">
+    <ion-nav-bar class="bar-light taxi-bar" align-title="center">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content scroll="false" class="login">
+        <ion-list class="list-item-no-border">
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Name</span>
+                <input type="text" name="name" placeholder="Name" ng-model="party.name" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Phone</span>
+                <input type="text" name="phoneNumber" placeholder="Phone" ng-model="party.phoneNumber" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Email</span>
+                <input type="email" name="email" placeholder="Email" ng-model="party.email" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password" ng-model="party.password" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-button mgn-t10">
+                <button class="button button-energized button-block mgn-t20" ng-click="register()">
+                    Register
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

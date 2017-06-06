@@ -1,0 +1,25 @@
+<ion-view view-title="My Rides">
+    <ion-nav-buttons side="secondary">
+        <button ng-click="showFilterBar()" class="button button-icon icon taxi-nav-button ion-ios-search">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="ride in rides" ui-sref="app.manyride({id:ride._id})">
+                <h2>
+                    {{ride.destination}}
+                    <span class="item-note">
+                      {{status(ride)}}
+                    </span>
+                </h2>
+                <p>
+                    {{ride.departure}}
+                    <span class="item-note">
+                      {{ride.price | currency:'TZS '}}
+                    </span>
+                </p>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

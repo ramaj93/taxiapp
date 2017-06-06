@@ -1,0 +1,42 @@
+<ion-view view-title="Profile">
+    <ion-nav-buttons side="secondary">
+        <button ng-click="openModal()" class="button button-outline button-dark">
+            Edit
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div ng-repeat="driver in drivers">
+            <div class="list card">
+                <div class="item item-image">
+                    <img ng-src="{{driver.avatar}}">
+                </div>
+            </div>
+            <div class="prof">
+                <ul class="list  list-item-no-border">
+                    <li class="item">
+                        {{driver.name}}
+                    </li>
+                    <li class="item date">
+                        JOINED {{driver.date}}!!
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <a class="item item-icon-left">
+                    <i class="icon  ion-android-home"></i> From {{driver.homeTown}}
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-ios-musical-notes"></i> Favorite music is {{driver.music}}
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-ios-person"></i> {{driver.aboutMe}}
+                </a>
+                <a>
+                    <p>
+                        This information will only be seen by the passenger you ride with.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

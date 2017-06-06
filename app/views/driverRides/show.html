@@ -1,0 +1,49 @@
+<ion-view view-title="A Ride">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar">
+                <img ng-src="{{ride.avatar}}">
+                <h2>
+                	{{ride.driver}}
+                	<span class="item-note">
+                      {{status()}}
+                    </span>
+                </h2>
+                <p>
+                    {{ride.price | currency:'TZS '}}
+                    <span class="item-note">
+                      {{ride.distance}} KM
+                    </span>
+                </p>
+            </ion-item>
+            <ion-item>
+                <p>
+                    <strong>Pick Location</strong>
+                    <span class="item-note">
+                      {{ride.departure}}
+                    </span>
+                </p>
+                <p>
+                    <strong>Destination</strong>
+                    <span class="item-note">
+                      {{ride.destination}}
+                    </span>
+                </p>
+            </ion-item>
+            <ion-item class="item-no-border-bottom">
+                <button ng-if="ride.state == 'Done'" class="button button-energized button-block">
+                    Rate Driver
+                </button>
+                <button ng-if="ride.state == 'Not Confirmed'" class="button button-energized button-block">
+                    Confirm
+                </button>
+                <button ng-if="ride.state == 'Waiting Driver'" class="button button-energized button-block">
+                    Request
+                </button>
+                <button ng-click="cancel()" ng-if="ride.state == 'Waiting Driver' || ride.state == 'Not Confirmed'" class="button button-energized button-block">
+                    Cancel
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

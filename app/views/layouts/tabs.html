@@ -1,0 +1,10 @@
+<!--app navigation bar-->
+<ion-nav-bar class="bar-light taxi-bar">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>
+<!--end app navigation bar-->
+<!-- app tabs -->
+<ng-include src="'views/layouts/passenger.html'" ng-if="passenger"></ng-include>
+<ng-include src="'views/layouts/driver.html'" ng-if="driver"></ng-include>
+<!-- end app tabs -->

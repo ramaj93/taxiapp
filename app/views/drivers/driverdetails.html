@@ -1,0 +1,86 @@
+<ion-view>
+    <ion-header-bar class="bar-light bar bar-header taxi-bar" align-title="center">
+        <div>
+            <button class="button button-icon " ng-click=" closeModal()"><span class="icon ion-ios-close-empty"></span></button>
+            <div class="title">{{driver.name}}</div>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list card">
+            <div class="item item-image">
+                <img ng-src="{{driver.imageUrl}}">
+            </div>
+        </div>
+        <div class="prof">
+            <ul class="list  list-item-no-border">
+                <li class="item">
+                    {{driver.name}}
+                </li>
+                <li class="item date">
+                    JOINED {{driver.date}} !!
+                </li>
+            </ul>
+        </div>
+        <div class="list prof">
+            <div class="item item-divider">
+                DRIVER DETAILS
+            </div>
+            <a class="item item-button-right"> PHONE NUMBER : {{driver.phoneNumber}}</a>
+            <a class="item">
+    AGE : {{driver.age}}
+  </a>
+            <div class="item item-divider">
+                CAR DETAILS
+            </div>
+            <a class="item">
+    CAR MODEL : {{driver.carModel}}
+  </a>
+            <a class="item">
+    CAR COLOR : {{driver.carColor}}
+  </a>
+            <a class="item">
+ PLATE NUMER : {{driver.plateNumber}}
+  </a>
+            <a>
+                <button class="button button-large button-positive" ng-click="openModal()">
+                    SEE REVIEW
+                </button>
+            </a>
+        </div>
+        <!--  <div class="list">
+            <p>
+                {{driver.bio}}
+            </p>
+            <p>
+                <a href="#" class="subdued">1 Like</a>
+            <a href="#" class="subdued">5 Comments</a>
+            </p>
+        </div> -->
+        <!-- <div>
+    <a href="tel:{{driver.phoneNumber}}" class="button button-positive">Call me</a>
+</div><i class="icon ion-ios-telephone"></i>
+ -->
+        <!-- <div class="item item-button-right">
+            {{driver.name}} : {{driver.phoneNumber}}
+            </li>
+            <div>
+                <a href="tel:{{driver.phoneNumber}}" class="button button-positive"><i class="icon ion-ios-telephone"></i></a>
+            </div>
+        </div> -->
+        <!--  <a class="button icon-left ion-ios7-telephone button-calm button-outline" ng-href="tel: {{driver.phoneNumber}}">Call +2557142816</a>
+        <ul>
+            <li class="item">
+                AGE : {{driver.age}}
+            </li>
+            <li class="item">
+                CAR MODEL : {{driver.carModel}}
+            </li>
+            <li class="item">
+                CAR COLOR : {{driver.carColour}}
+            </li>
+            <li class="item">
+                PLATE NUMER : {{driver.plateNumber}}
+            </li>
+        </ul> -->
+    </ion-content>
+</ion-view>

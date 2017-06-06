@@ -1,0 +1,35 @@
+<ion-view view-title="Profile">
+    <ion-nav-buttons side="secondary">
+        <button ng-click="openModal()" class="button button-outline button-dark">
+            Edit
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list card">
+            <div class="item item-image">
+                <img ng-src="{{user.avatar}}">
+            </div>
+        </div>
+        <div class="prof">
+            <ul class="list  list-item-no-border">
+                <li class="item">
+                    {{user.name}}
+                </li>
+                <li class="item date">
+                    JOINED {{user.joinedIn | date : 'shortDate' }}!!
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <a class="item item-icon-left">
+                <i class="icon  ion-android-home"></i> From {{user.home ? user.home:'Dar es salam'}}
+            </a>
+            <a class="item item-icon-left">
+                <i class="icon ion-ios-musical-notes"></i> Favorite music is {{user.genre ? user.genre:'Gospel'}}
+            </a>
+            <a class="item item-icon-left">
+                <i class="icon ion-ios-person"></i> {{user.about ? user.about: 'I like travelling' }}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

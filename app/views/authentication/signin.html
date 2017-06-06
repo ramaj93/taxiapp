@@ -1,0 +1,29 @@
+<ion-view class="taxi-background">
+    <ion-content scroll="false" class="login">
+        <ion-list class="list-item-no-border">
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Email</span>
+                <input type="email" placeholder="Email" ng-model="user.email" class="input-bordered" autofocus>
+            </ion-item>
+            <ion-item class="item-input item-floating-label input">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password" ng-model="user.password" class="input-bordered">
+            </ion-item>
+            <ion-item class="item-button mgn-t20">
+                <button class="button button-energized button-block" ng-click="signin()">
+                    Login
+                </button>
+            </ion-item>
+            <ion-item ng-if="hasNoProfile" class="item-button mgn-t20">
+                <button class="button button-energized button-block" ui-sref="signup({type:'PASSENGER'})">
+                    Register as Passenger
+                </button>
+            </ion-item>
+            <ion-item ng-if="hasNoProfile" class="item-button mgn-t20">
+                <button class="button button-energized button-block" ui-sref="signup({type:'DRIVER'})">
+                    Register as Driver
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

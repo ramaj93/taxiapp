@@ -1,0 +1,60 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-light bar bar-header taxi-bar" align-title="center">
+        <div>
+            <button class="button button-icon " ng-click=" closeModal()"><span class="icon ion-ios-close-empty"></span></button>
+            <div class="title">Ratings</div>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ul class="list">
+                <li class="item">
+                    1.How was the driving speed?
+                </li>
+                <ion-radio ng-model="choice" ng-value="'A'">excellent</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'C'">bad</ion-radio>
+            </ul>
+        </ion-list>
+        <ion-list>
+            <ul class="list">
+                <li class="item">
+                    2.How was the drivers attitude?
+                </li>
+                <ion-radio ng-model="choice" ng-value="'A'">excellent</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'C'">bad</ion-radio>
+            </ul>
+        </ion-list>
+        <ion-list>
+            <ul class="list">
+                <li class="item">
+                    3.How was the proffetionalism of the driver?
+                </li>
+                <ion-radio ng-model="select" ng-value="'A'">excellent</ion-radio>
+                <ion-radio ng-model="select" ng-value="'B'">good</ion-radio>
+                <ion-radio ng-model="select" ng-value="'C'">bad</ion-radio>
+            </ul>
+        </ion-list>
+        <ion-list>
+            <ul class="list">
+                <li class="item">
+                    4.How was the condition of the car?
+                </li>
+                <ion-radio ng-model="choice" ng-value="'A'">excellent</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'C'">bad</ion-radio>
+            </ul>
+        </ion-list>
+        <ion-list>
+            <ul class="list">
+                <li class="item">
+                    5.how safe was the drive?
+                </li>
+                <ion-radio ng-model="choice" ng-value="'A'">excellent</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'C'">bad</ion-radio>
+            </ul>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

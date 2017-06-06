@@ -1,0 +1,1 @@
+# EN to SW translation for shuledirect
